@@ -47,9 +47,9 @@ public class S44Fragment extends Fragment implements View.OnClickListener{
     private static double i44_34=0;
 
     private static double r44_41=1;
-    private static double i44_41=1;
-    private static double r44_42=1;
-    private static double i44_42=1;
+    private static double i44_41=0;
+    private static double r44_42=0;
+    private static double i44_42=0;
     private static double r44_43=0;
     private static double i44_43=0;
     private static double r44_44=0;
