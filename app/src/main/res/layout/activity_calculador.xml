@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nietoveinte.complix.CalculadorActivity"
+    android:background="@color/colorGrey52">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/relmaintop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/bartop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+                <android.support.v7.widget.Toolbar
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/toolbarTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+
+
+            </android.support.design.widget.AppBarLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/relcal1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:layout_below="@+id/relmaintop"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:weightSum="100">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/A_cal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:background="#fff"
+            android:text="A="
+            android:maxLength="8"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_A"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="65"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:paddingLeft="0dp"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textAppearance="@style/Widget.Design.TextInputLayout"
+            android:background="@color/colorFoco"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+    </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/relcalpolar1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="50"
+            android:layout_below="@+id/relcal1"
+            android:orientation="horizontal"
+
+            android:weightSum="100">
+
+            <android.support.v7.widget.AppCompatTextView
+
+
+                android:id="@+id/A_polar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:background="#fff"
+                android:text="A ∟="
+                android:maxLength="8"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:theme="@style/RaisedButton"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_A_po"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="65"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:paddingLeft="0dp"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:background="@color/colorFoco"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:theme="@style/RaisedButton"/>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@+id/relcalpolar1"
+            android:background="@drawable/white_grey_border_resolve"
+            android:id="@+id/linea">
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+        android:id="@+id/relcal2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:layout_below="@+id/linea"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <android.support.v7.widget.AppCompatTextView
+
+
+            android:id="@+id/B_calc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:background="#fff"
+            android:text="B="
+            android:maxLength="8"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_B"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="65"
+            android:background="@color/colorFoco"
+            android:textAppearance="@style/Widget.Design.TextInputLayout"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/relcalpolar2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:layout_below="@+id/relcal2"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <android.support.v7.widget.AppCompatTextView
+
+
+                android:id="@+id/B_polar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:background="#fff"
+                android:text="B ∟="
+                android:maxLength="8"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:theme="@style/RaisedButton"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_B_po"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="65"
+                android:background="@color/colorFoco"
+                android:textAppearance="@style/Widget.Design.TextInputLayout"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:theme="@style/RaisedButton"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@+id/relcalpolar2"
+            android:background="@drawable/white_grey_border_resolve"
+            android:id="@+id/linea2">
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/relcal3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:layout_below="@+id/linea2"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="100">
+
+            <android.support.v7.widget.AppCompatTextView
+
+
+                android:id="@+id/Z_calc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:background="#fff"
+                android:text="Z="
+                android:maxLength="8"
+                android:maxLines="1"
+                android:textAlignment="center"
+
+                android:textSize="20dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:theme="@style/RaisedButton"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_Z"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="65"
+                android:background="@color/colorGreyDesactivado"
+                android:textAppearance="@style/Widget.Design.TextInputLayout"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:theme="@style/RaisedButton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/relcalpolar4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="35"
+            android:layout_below="@+id/relcal3"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <android.support.v7.widget.AppCompatTextView
+
+
+                android:id="@+id/Z_polar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:background="#fff"
+                android:text="Z ∟="
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:theme="@style/RaisedButton"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_Z_po"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="65"
+                android:background="@color/colorGreyDesactivado"
+                android:textAppearance="@style/Widget.Design.TextInputLayout"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:theme="@style/RaisedButton"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@+id/relcalpolar4"
+            android:background="@drawable/white_grey_border_resolve"
+            android:id="@+id/linea3">
+
+        </RelativeLayout>
+
+       <RelativeLayout
+                android:id="@+id/relcalbotones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linea3"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+
+            <LinearLayout
+                android:id="@+id/relbotoo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <Button
+                    android:id="@+id/btn_sumaab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_weight="33"
+                    android:text="Z= A+B"
+                    android:textSize="20dp"
+                    style="@style/Widget.AppCompat.Button" />
+
+                <Button
+                    android:id="@+id/btn_resta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_weight="33"
+                    android:elevation="6dp"
+                    android:text="Z= A-B"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/btn_multipli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_weight="33"
+                    android:text="Z= A*B"
+                    android:textSize="20dp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+       </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

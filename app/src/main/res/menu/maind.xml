@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/determinanteMenu"
+        android:title="Determinante:"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+
+    <item android:id="@+id/det2x2"
+        android:title="2x2"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+
+    <item android:id="@+id/det3x3"
+        android:title="3x3"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+<!--
+    <item android:id="@+id/det_4x4"
+        android:title="4x4"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>-->
+
+</menu>

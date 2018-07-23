@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="1dp">
+
+  <!--  #5ea0fc,  #abcffa   "#0080f0"-->
+    <item
+        android:bottom="3dp"
+        android:right="-3dp"
+        android:left="-3dp"
+        android:top="-3dp">
+
+        <shape
+            android:shape="rectangle">
+
+            <stroke android:width="3dp"
+                    android:color="#5ea0fc"/>
+                <solid android:color="#2c92ec"/>
+
+
+
+        </shape>
+
+
+
+
+    </item>
+
+
+
+</layer-list>
+
+   <!-- #419be9-->

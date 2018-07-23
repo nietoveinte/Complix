@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorGrey2">#c3c3c3</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorGreyDesactivado">#eeefef</color>
+
+    <color name="colorGrey52">#fdfcfc</color>
+
+    <color name="colorLetraRFR">#3f5c7e</color>
+    <color name="colorLetraiFR">#24b377</color>
+
+    <color name="colorBlanco">#fff</color>
+    <color name="colorLetraRFR_M">#55390202</color>
+
+
+    <color name="colorFoco">#d9ebff</color>
+    <color name="colorBase">#369b92</color>
+    <color name="colorPrimaryNN">#c7fdfd</color>
+
+    <color name="colorSwicthDes">#89c0ff</color>
+    <color name="colorSwicthAct">#1c86ff</color>
+    <color name="colorHint">#9b91d7fa</color>
+
+
+</resources>

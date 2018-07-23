@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c92ec"
+    android:weightSum="100"    >
+
+        <LinearLayout
+            android:id="@+id/rel1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/a22_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="35"
+                    android:background="#fff"
+                    android:hint="X1"
+                    android:maxLength="12"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:textAppearance="@style/Widget.Design.TextInputLayout"
+                    android:theme="@style/RaisedButton"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/a22_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/a22_x"
+                    android:layout_toRightOf="@+id/a22_x"
+                    android:layout_weight="35"
+                    android:background="@color/colorGreyDesactivado"
+                    android:hint="Y1"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:paddingLeft="0dp"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:textAppearance="@style/Widget.Design.TextInputLayout"
+                    android:theme="@style/RaisedButton"/>
+
+                <!--android:textColorHint="@color/colorHint"-->
+
+                <android.support.v7.widget.AppCompatTextView
+
+
+                    android:id="@+id/b22_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="30"
+                    android:hint="C1"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:background="@drawable/white_grey_border_beiq"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:textAppearance="@style/Widget.Design.TextInputLayout"
+                    android:theme="@style/RaisedButton"/>
+
+
+                android:textColor="#f00"
+                android:paddingLeft="0dp"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorHint"
+                android:textSize="30dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rel2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="49.5"
+            android:weightSum="100">
+
+                <android.support.v7.widget.AppCompatTextView
+
+
+                    android:id="@+id/a22_21"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="35"
+                    android:maxLines="1"
+                    android:maxLength="15"
+                    android:hint="X2"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:background="@color/colorGreyDesactivado"
+                    android:textAppearance="@style/Widget.Design.TextInputLayout"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:theme="@style/RaisedButton"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+
+
+                    android:id="@+id/a22_22"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="35"
+                    android:maxLines="1"
+                    android:maxLength="15"
+                    android:textAppearance="@style/Widget.Design.TextInputLayout"
+                    android:hint="Y2"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:background="#fff"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:theme="@style/RaisedButton"/>
+
+                <android.support.v7.widget.AppCompatTextView
+
+
+                    android:id="@+id/b22_21"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="30"
+                    android:maxLines="1"
+                    android:maxLength="15"
+                    android:hint="C2"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:background="@drawable/white_grey_border_beiq"
+                    android:textAppearance="@style/Widget.Design.TextInputLayout"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:theme="@style/RaisedButton"/>
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+
+

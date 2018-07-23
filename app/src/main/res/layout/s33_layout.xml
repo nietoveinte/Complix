@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c92ec"
+    android:weightSum="100"    >
+
+    <LinearLayout
+        android:id="@+id/rel1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="33"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <android.support.v7.widget.AppCompatTextView
+
+            android:id="@+id/a33_11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="25"
+            android:background="#fff"
+            android:hint="X1"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:textAppearance="@style/Widget.Design.TextInputLayout"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/a33_12"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/a22_x"
+            android:layout_toRightOf="@+id/a22_x"
+            android:layout_weight="25"
+            android:background="@color/colorGreyDesactivado"
+            android:hint="Y1"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:paddingLeft="0dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/Widget.Design.TextInputLayout"
+            android:textSize="12dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/a33_13"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/a22_x"
+            android:layout_toRightOf="@+id/a22_x"
+            android:layout_weight="25"
+            android:background="#fff"
+            android:textAppearance="@style/Widget.Design.TextInputLayout"
+            android:hint="Z1"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:paddingLeft="0dp"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+        <android.support.v7.widget.AppCompatTextView
+
+
+            android:id="@+id/b33_11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="25"
+            android:textAppearance="@style/Widget.Design.TextInputLayout"
+            android:hint="C1"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:background="@drawable/white_grey_border_beiq"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+
+        android:textColor="#f00"
+        android:paddingLeft="0dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorHint"
+        android:textSize="30dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rel2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="33"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <android.support.v7.widget.AppCompatTextView
+
+
+            android:id="@+id/a33_21"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:textAppearance="@style/Widget.Design.TextInputLayout"
+            android:layout_weight="25"
+            android:background="@color/colorGreyDesactivado"
+            android:hint="X2"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/a33_22"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:textAppearance="@style/Widget.Design.TextInputLayout"
+            android:layout_weight="25"
+            android:background="#fff"
+            android:hint="Y2"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="12dp"
+
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+
+
+            android:id="@+id/a33_23"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="25"
+            android:maxLines="1"
+            android:maxLength="12"
+            android:textAppearance="@style/Widget.Design.TextInputLayout"
+            android:hint="Z2"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:background="@color/colorGreyDesactivado"
+
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+
+            android:id="@+id/b33_21"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="25"
+            android:textAppearance="@style/Widget.Design.TextInputLayout"
+            android:hint="C2"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:background="@drawable/white_grey_border_beiq"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rel3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="33"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <android.support.v7.widget.AppCompatTextView
+
+            android:id="@+id/a33_31"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textAppearance="@style/Widget.Design.TextInputLayout"
+            android:layout_gravity="center"
+            android:layout_weight="25"
+            android:background="#fff"
+            android:hint="X3"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/a33_32"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/a22_x"
+            android:layout_toRightOf="@+id/a22_x"
+            android:layout_weight="25"
+            android:textAppearance="@style/Widget.Design.TextInputLayout"
+            android:background="@color/colorGreyDesactivado"
+            android:hint="Y3"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:paddingLeft="0dp"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/a33_33"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/a22_x"
+            android:layout_toRightOf="@+id/a22_x"
+            android:layout_weight="25"
+            android:textAppearance="@style/Widget.Design.TextInputLayout"
+            android:background="#fff"
+            android:hint="Z3"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:paddingLeft="0dp"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+        <android.support.v7.widget.AppCompatTextView
+
+
+            android:id="@+id/b33_31"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="25"
+            android:hint="C3"
+            android:textAppearance="@style/Widget.Design.TextInputLayout"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            android:background="@drawable/white_grey_border_beiq"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:theme="@style/RaisedButton"/>
+
+
+        android:textColor="#f00"
+        android:paddingLeft="0dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorHint"
+        android:textSize="30dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+

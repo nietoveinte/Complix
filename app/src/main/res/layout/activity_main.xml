@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+
+            android:id="@+id/reltoolbartop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/bartop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+                <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/toolbarTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:textAlignment="center"
+                    android:textDirection="locale"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:titleTextColor="@color/colorBlanco" />
+
+
+                <!--
+                app:titleTextColor="#2c92ec"
+                app:titleTextColor="@android:color/white"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:theme="@style/ThemeOverlay.AppCompat.ActionBar"-->
+
+            </android.support.design.widget.AppBarLayout>
+
+        </RelativeLayout>
+
+
+        <!--
+        <RelativeLayout
+            android:id="@+id/relnav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relmaintop">
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="top"
+                android:background="#fff"
+                app:menu="@menu/navigation" />
+        </RelativeLayout>-->
+
+
+        <RelativeLayout
+
+            android:id="@+id/relLayoutMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/reltoolbartop">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/containermpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+            </android.support.v4.view.ViewPager>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relBotones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relbottom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relLayoutMiddle">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/containermpager3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+            </android.support.v4.view.ViewPager>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relbottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_grey_border_bottom">
+
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbarBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+                        <!--
+                        <ImageView
+                            android:id="@+id/igualview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="70"
+                            android:src="@drawable/ic_drag_handle"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:theme="@style/RaisedButton"/>-->
+                        <!--
+                        <Switch
+                            android:id="@+id/switch2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="30"
+                            android:text="Switch" />-->
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/swPolar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="∟"
+                            android:textStyle="bold"
+                            android:textSize="25dp"
+                            android:textColor="#2c92ec"
+                            android:theme="@style/SwitchCompatTheme" />
+
+                        <!--android:text="∡"-->
+
+
+                        <TextView
+                            android:id="@+id/igualview"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="75"
+                            android:background="@drawable/white_grey_border_resolver"
+                            android:text="RESOLVER"
+                            android:textColor="#2c92ec"
+                            android:textSize="22dp"
+                            android:theme="@style/RaisedButton" />
+
+
+                        <ImageView
+                            android:id="@+id/deleteview"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="25"
+                            android:src="@drawable/ic_delete_red"
+                            android:theme="@style/RaisedButton" />
+
+
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

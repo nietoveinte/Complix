@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nietoveinte.complix.Menu_Activity">
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btnCalcuMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#abcffa"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="15dp"
+
+        android:text="Calculadora"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/Complix"
+        android:layout_alignRight="@+id/btnSisMenu"
+        android:layout_alignEnd="@+id/btnSisMenu"
+        android:layout_alignLeft="@+id/btnSisMenu"
+        android:layout_alignStart="@+id/btnSisMenu" />
+
+    <Button
+        android:id="@+id/btnSisMenu"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#45DDFF"
+        android:text="Sistemas De Ecuaciones"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/btnCalcuMenu"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnDetMenu"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#45DDFF"
+        android:text="Determinantes"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/btnSisMenu"
+        android:layout_alignLeft="@+id/btnSisMenu"
+        android:layout_alignStart="@+id/btnSisMenu"
+        android:layout_alignRight="@+id/btnSisMenu"
+        android:layout_alignEnd="@+id/btnSisMenu" />
+
+
+    <TextView
+
+        android:id="@+id/Complix"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@android:color/black"
+        android:text="Complix"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/btnCalcuMenu"
+        android:layout_alignStart="@+id/btnCalcuMenu"
+        android:layout_alignRight="@+id/btnCalcuMenu"
+        android:layout_alignEnd="@+id/btnCalcuMenu" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@mipmap/ic_logo" />
+
+
+</RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
